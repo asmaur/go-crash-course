@@ -1,0 +1,11 @@
+<h1>Todo List</h1>
+<div>
+  {{/* Displays numbers of todos */}} {{.TodoCount}} Todos
+  <a href="/new">Add a todo</a>
+</div>
+
+<div>
+  {{range .Todos}}
+  <p>{{.}}</p>
+  {{end}}
+</div>
